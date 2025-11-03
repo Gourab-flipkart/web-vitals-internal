@@ -70,6 +70,9 @@
     "dist",
     "src"
   ],
+  "publishConfig": {
+    "registry": "https://jfrog.fkinternal.com/artifactory/api/npm/npm_virtual/"
+  },
   "scripts": {
     "build": "run-s clean build:ts build:js",
     "build:ts": "tsc -b",
@@ -110,17 +113,14 @@
     "TTFB"
   ],
   "author": {
-    "name": "Philip Walton",
-    "email": "philip@philipwalton.com",
+    "name": "Gourab Bandyopadhyay",
+    "email": "gourabb1.vc@flipkart.com",
     "url": "http://philipwalton.com"
   },
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/GoogleChrome/web-vitals.git"
-  },
-  "bugs": {
-    "url": "https://github.com/GoogleChrome/web-vitals/issues"
+    "url": "https://github.com/Gourab-flipkart/web-vitals-internal.git"
   },
   "husky": {
     "hooks": {
