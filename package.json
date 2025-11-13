@@ -1,6 +1,6 @@
 {
   "name": "@flipkart/web-vitals-soft-navs",
-  "version": "5.1.0-soft-navs-2-icp.0.0.2",
+  "version": "0.0.1",
   "description": "Easily measure performance metrics in JavaScript",
   "type": "module",
   "typings": "dist/modules/index.d.ts",
