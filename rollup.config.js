@@ -25,10 +25,17 @@ const configurePlugins = ({module}) => {
           '@babel/preset-env',
           {
             bugfixes: true,
-            targets: {
-              node: 'current',
-              browsers: '> 1%, last 2 versions',
-            },
+            targets: [
+              // Match browsers supporting "Baseline Widely Available" features:
+              // https://web.dev/baseline
+              'chrome >0 and last 2.5 years',
+              'edge >0 and last 2.5 years',
+              'safari >0 and last 2.5 years',
+              'firefox >0 and last 2.5 years',
+              'and_chr >0 and last 2.5 years',
+              'and_ff >0 and last 2.5 years',
+              'ios >0 and last 2.5 years',
+            ],
           },
         ],
       ],
